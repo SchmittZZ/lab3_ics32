@@ -5,7 +5,7 @@ import socket
 mysocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
 
 # get local machine name
-host = socket.gethostname()                           
+host = ""                          
 
 port = 8000
 
@@ -18,7 +18,17 @@ print (recievedData.decode('ascii'))
 
 mysocket.send(b'Testing?')
 
-request =input("What text file do you want?")
+request =input("What's the directory of the text file you want?")
 mysocket.send(request.encode(encoding='ascii'))
+
+with open(request.split("/")[-1:][0], 'wb') as file:
+    while True:
+        print("receiving data..")
+        data = mysocket.recv(1024)
+        
+        if not data:
+            break
+        file.write(data)
+
 
 mysocket.close()

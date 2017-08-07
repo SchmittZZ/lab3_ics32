@@ -1,0 +1,27 @@
+Top 3 NFL Teams: 
+  49ers 2
+  Rams 2
+  Seahawks 1
+
+
+Top 3 NBA Teams: 
+  Warriors 2
+  Lakers 2
+  Kings 2
+
+
+Top 3 NHL Teams: 
+
+
+Top 3 MLB Teams: 
+  Giants 2
+
+(The number means each of those teams was chosen)
+number of invalid rank value: 1
+number of invalid sport value: 14
+The directory path containing all the CSV files is at: /Users/kyleli/Desktop/ics_32_lab2
+The number of files that are present in the directory path: 13
+A list of .csv file name that were evaluated: 
+/Users/kyleli/Desktop/ics_32_lab2/junesurvey.csv
+/Users/kyleli/Desktop/ics_32_lab2/marchsurvey.csv
+/Users/kyleli/Desktop/ics_32_lab2/report.csv
